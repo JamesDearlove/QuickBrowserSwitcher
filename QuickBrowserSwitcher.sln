@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickBrowserSwitcher", "QuickBrowserSwitcher\QuickBrowserSwitcher.csproj", "{96265211-C2AA-468D-A9F2-171FF4D0219C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickBrowserSwitcher", "QuickBrowserSwitcher\QuickBrowserSwitcher.csproj", "{96265211-C2AA-468D-A9F2-171FF4D0219C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickBrowserSwitcherTray", "QuickBrowserSwitcherTray\QuickBrowserSwitcherTray.csproj", "{08E7C12B-C2D5-489B-9BE1-15545F3BE67A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{96265211-C2AA-468D-A9F2-171FF4D0219C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96265211-C2AA-468D-A9F2-171FF4D0219C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96265211-C2AA-468D-A9F2-171FF4D0219C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08E7C12B-C2D5-489B-9BE1-15545F3BE67A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08E7C12B-C2D5-489B-9BE1-15545F3BE67A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08E7C12B-C2D5-489B-9BE1-15545F3BE67A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08E7C12B-C2D5-489B-9BE1-15545F3BE67A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
