@@ -124,7 +124,7 @@ else if (args.Length == 1)
         else
         {
             ProcessStartInfo processStartInfo = new ProcessStartInfo(browserShell);
-            processStartInfo.Arguments = args[0];
+            processStartInfo.Arguments = $"\"{args[0]}\"";
             processStartInfo.UseShellExecute = true;
 
             Process.Start(processStartInfo);

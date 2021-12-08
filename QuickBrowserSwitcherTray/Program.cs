@@ -53,7 +53,6 @@ class Program
     static void createTrayIcon()
     {
         trayIcon = new NotifyIcon();
-        trayIcon.Visible = true;
         trayIcon.MouseClick += trayIcon_MouseClick;
 
         updateTray();
@@ -65,6 +64,8 @@ class Program
         contextMenu.Items.Add("Quit", null, contextQuit_Click);
 
         trayIcon.ContextMenuStrip = contextMenu;
+
+        trayIcon.Visible = true;
     }
 
     static void updateTray()
@@ -72,7 +73,13 @@ class Program
         var regKey = Registry.CurrentUser.CreateSubKey(RegistryKeyRoot);
         var browserKey = regKey.GetValue(SettingBrowserExec);
 
-        if (browserKey != null)
+        if (browserKey == null)
+        {
+            // TODO: Remove hard coded 
+            regKey.SetValue(SettingBrowserExec, "firefox.exe");
+            updateTray("firefox.exe");
+        }
+        else
         {
             updateTray((string)browserKey);
         }
